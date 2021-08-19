@@ -12,6 +12,18 @@
     />
     <link rel="stylesheet" href="assets/vendors/aos/dist/aos.css/aos.css" />
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script>
+      function send() {
+        const answer = window.confirm("Потврди испраќање на порака");
+        if (answer) {
+          alert('Успешно испратена порака');
+        }
+        else {
+          alert('Пораката не е испратена')
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -154,6 +166,7 @@
                                 <a
                                   href="#"
                                   class="btn btn-lg btn-dark font-weight-bold mt-3"
+                                  onclick="send()"
                                   >Испрати порака</a
                                 >
                               </div>
